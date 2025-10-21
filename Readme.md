@@ -1,25 +1,35 @@
-[![Build Status](https://dev.azure.com/leezer3/OpenBVE/_apis/build/status/leezer3.OpenBVE?branchName=master)](https://dev.azure.com/leezer3/OpenBVE/_build/latest?definitionId=1&branchName=master)
+## HKTrainSim
 
-[![Build status](https://ci.appveyor.com/api/projects/status/p4d983eclo738hjo?svg=true)](https://ci.appveyor.com/project/leezer3/openbve)
+HKTrainSim is a fork of [OpenBVE](https://openbve-project.net), an open source train simulator.
 
-## OpenBVE Source Code - Readme
+The goal is to provide support for players who play HK-based OpenBVE contents (Particularly contents from HKRSDA) to ensure that any known issues/design limitations are addressed before they manifests into the player experience.
 
-This repository contains the source code for the Train Simulator OpenBVE, a 3D cab based simulator.
+## Goals
+- Provide support for players who play HK-based content
+- Provide bug fixes whenever issues are identified
+- Upstream bug fixes if deemed appropriate
+- Streamline experience for obtaining HK-based content
+- Potentially new features if desired by HK developers
 
-The simulator supports the following route formats:
-* Native CSV / RW.
-* BVE5 TXT format.
-* Mechanik DAT format.
+## Non-goals
+- Provide support for international content
+- Diverge from the upstream base
+- Fully merged into upstream
+- - HKTrainSim aims to hold a different philosophy than OpenBVE
+- A project that developer should exclusively depend on
+- - Contents should always gracefully fallback if a feature is not available in OpenBVE. Behavioral change is acceptable (though avoided if possible), however crashing/making the game unplayable is not.
 
-OpenBVE is built in OpenGL, using the OpenTK framework for windowing.
+## Changes
+- **Feature Revert:** Account for TFOs in Animated Objects
+- - Introduced in v1.10.0.1, this broke backward compatibility with existing objects which only intends to account for the player train.
+- - In addition, it is not possible for developer to opt out of this behavior, which means developer have no control on whether a TFO or the player's train is selected, causing various issues such as PSDs poping in and out.
+- - See Also:
+- - - https://github.com/leezer3/OpenBVE/issues/1009
+- - - https://github.com/leezer3/OpenBVE/issues/1164
 
 ### Fixed Errata
 
 These are described fully [here](https://github.com/leezer3/OpenBVE/wiki/Errata).
-
-### Nightly Builds
-
-Automatically generated daily builds are available [here](http://vps.bvecornwall.co.uk/OpenBVE/Builds/).
 
 ### Developer Documentation
 Documentation for development of add-ons (update version of docs originally written by _michelle_) can be found [here](https://openbve-project.net/documentation_hugo/en/).
@@ -41,17 +51,7 @@ Please see the [Contributors File](Contributing.md) for a list of contributors, 
 
 **Project Website**:
 
-https://openbve-project.net
-
-Project Source Code on GitHub: https://github.com/leezer3/OpenBVE
-
-**Discussion Boards**:
-
-- [BVE Worldwide](http://bveworldwide.forumotion.com)
-
-**Official Project Forum:**
-
-http://bveworldwide.forumotion.com/f14-the-sim-in-time-general-discussion
+Project Source Code on GitHub: https://github.com/HKTSS/HKTrainSim
 
 ### License
 
