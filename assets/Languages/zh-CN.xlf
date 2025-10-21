@@ -24,7 +24,7 @@
 				<group id="program">
 					<trans-unit id="title">
 						<source>OpenBVE</source>
-						<target>OpenBVE</target>
+						<target>HKTrainSim</target>
 					</trans-unit>
 				</group>
 				<group id="about">

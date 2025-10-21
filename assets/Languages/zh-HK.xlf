@@ -24,13 +24,13 @@
 				<group id="program">
 					<trans-unit id="title">
 						<source>OpenBVE</source>
-						<target>OpenBVE</target>
+						<target>HKTrainSim</target>
 					</trans-unit>
 				</group>
 				<group id="about">
 					<trans-unit id="title">
 						<source>About</source>
-						<target>關於OpenBVE</target>
+						<target>關於</target>
 					</trans-unit>
 					<trans-unit id="description">
 						<source>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</source>

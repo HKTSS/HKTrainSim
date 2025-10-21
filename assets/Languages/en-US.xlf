@@ -19,7 +19,7 @@
 			<group id="openbve">
 				<group id="program">
 					<trans-unit id="title">
-						<source>OpenBVE</source>
+						<source>HKTrainSim</source>
 					</trans-unit>
 				</group>
 				<group id="about">
