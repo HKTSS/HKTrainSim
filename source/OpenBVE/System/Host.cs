@@ -743,6 +743,11 @@ namespace OpenBve {
 					}
 				}
 			}
+			
+			// HKTS: Reverts https://github.com/leezer3/OpenBVE/commit/5a4ffcb2a9f950ae77f2bd1e0ff61af873a536d6
+			// Due to the way it's calculated it will often misbehave. Until there's a way to filter them based on rail index, this will have to go to avoid breaking content for now.
+			// See: https://github.com/leezer3/OpenBVE/issues/1164
+			return closestTrain;
 
 			for (int j = 0; j < Program.TrainManager.TFOs.Count; j++)
 			{
